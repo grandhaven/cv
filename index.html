@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--this tells browser this is html type document n what type of html version used-->
+<html lang="en" dir="ltr">
+<!--html here says browser whatever written within this to render it as html code-->
+
+<head>
+  <!--this is a html code which holds information about a page.-->
+  <meta charset="utf-8">
+  <!--this says to our browser that all the text in this html file is encoded as utf-8
+                                encoding system. this is similar to unicode (which allows to encode to diff lang
+                                and u should use this utf-8 as standard whenever u r writing the html code as
+                                this includes all the international characters n unicode characters, emoji as well.)-->
+  <!--meta is a tag and charset is an attribute for the meta tag. -->
+  <!-- they are other attributes for meta tag such as name = "description" content = "this
+                                is the description about the page. & this will be viewed when u search for ur webpage
+                                in the google website and this word will be appeared as it is over there. And this
+                                is how the search engines will look for meta tag and look for description content n
+                                decides how it must be displayed on there search engine page such as google."-->
+  <meta name="description" content="this is a trial website developed for the personal use only!">
+  <meta name="keywords" content="html, css, xml, javascript">
+  <meta name="author" content="radhika">
+  <title>💙Rad's Personal Site</title>
+  <!--this title helps to display title of the page ex:index.html displays on tab
+                                            of browser website. we copied unicode for heart symbol n pasted here.-->
+</head>
+
+<body>
+  <h1>Radhika</h1> <!-- u can write h1 n press enter u will h1 boilerplate-->
+  <p><em>Founder of <strong>Rad's Personal Site</strong>.</em></p>
+  <!--em emphasizes the text with a stress and making it italic. where as strong is used for making this is very
+    important text-->
+  <!--don't use i instead use em. don't use b instead use strong. i & b are only for decorative. but for
+      decorative purposes alone for i use css stype property: font-style & for b use font-weight-->
+
+  <p>This website is being developed in order to learn and experiment various tools to develop a website.</p>
+  <hr size="1" noshade>
+  <h3>Education</h3>
+  <ul>
+    <li>Bachelor's Degree</li>
+    <ul>
+      <li>Anna University</li>
+    </ul>
+    <li>Master's Degree</li>
+    <ul>
+      <li>None</li>
+    </ul>
+  </ul>
+  <h3>Interest</h3>
+  <ol start="5">
+    <li>
+      Java
+    </li>
+    <li>
+      Sql Server
+    </li>
+  </ol>
+  <h3>Testing Nested Unordered List</h3>
+  <ul>
+    <li>
+      Test1
+      <ul>
+        <li>
+          Sub Test1
+          <ul>
+            <li>
+              Sub Sub Test1
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      Test2
+    </li>
+  </ul>
+  <hr size="1" noshade />
+  <h3>Work Experience</h3>
+  <table cellspacing="10">
+    <tr>
+      <th>
+        dates
+      </th>
+      <th>
+        work
+      </th>
+    </tr>
+    <tr>
+      <td>
+        2010-2013
+      </td>
+      <td>
+        software developer
+      </td>
+    </tr>
+    <tr>
+      <td>
+        2010
+      </td>
+      <td>
+        Software Intern
+      </td>
+    </tr>
+  </table>
+  <hr size="1" noshade />
+  <h3>Skills</h3>
+  <table cellspacing="10"> <!--nested tables: but not recommended as it creates confusing better to use css.-->
+    <table>
+      <tr>
+        <td>
+          sql server
+        </td>
+        <td>
+          ★★★★★
+        </td>
+        <td>
+          drawing
+        </td>
+        <td>
+          ★★★
+        </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td>
+          data entry
+        </td>
+        <td>
+          ★★★★★
+        </td>
+        <td>
+          playing video games
+        </td>
+        <td>
+          ★★★
+        </td>
+      </tr>
+    </table>
+  </table>
+  <hr size="1" noshade />
+  <table cellspacing="20"> <!--even though cellspacing attribute doesn't recommend to use but for example
+                            purpose we used it here. better to always use css n leave html for just structure.-->
+                            <!--cellspacing is a space between two cells. cellpadding is space from data to cell boarder-->
+    <tr>
+      <td>
+        <img src="https://i.pinimg.com/originals/d3/b8/73/d3b8736f7026072b1a301acb5b46c163.jpg" alt="kitchen designs1"/>
+      </td>
+      <td>
+        Src from computer
+      </td>
+    </tr>
+  </table>
+  <h3>src from online</h3>
+  <img src="https://wp.zillowstatic.com/1/kitchen1-d0cdf7.jpg" alt="kitchen designs2"/>
+  <!--the alt attribute for img helps the search engines optimizatin to know what's this link is about and brings
+    this site with image when someone looks in search engine for say for kitchens it will display this as well
+    as this is related to that search.-->
+    <!--for online sources the browser will get permission from that site to download the src image from that online
+      website and then from there it will display on your site.
+
+      & note: if the image coming from the online website is shutdown then that image will no longer be available
+      to be displayed on our site. So, to avoid this u can remove our reliance on those website, u can copy & paste
+      those pics into your HTML-Personal Site folder so it retrieves the image from there instead of from the website.
+      -->
+      <h3>This Image came from my project's folder. So no reliance to the online site & image will be available till
+        my website is online.</h3>
+      <img src="Images/circle-cropped.png" alt="kitchen designs2">
+      <!--u can directly specify the image file name instead of path coz both index.html & image files r in same
+        place under the folder HTML - Personal Site. & note: i used crop-circle.imageonline.co u crop the picture
+          in circle shape.-->
+          <br />
+          <h3>This is a link to the image.</h3>
+<a href="Images/kitchen polk.jpg">My Kitchen</a>
+<!--a tag has a hyperlink reference to a image and its displayed on the site as a text My Kitchen n when u click it
+  it will open a new link showing this image.-->
+  <br />
+  <hr size="1" noshading/>
+
+
+<h3>This is a link to another webpage</h3>
+  <a href="hobbies.html">My Hobbies</a>
+
+  <h3>Another page</h3>
+  <a href="contact.html">Contact Me</a>
+  <hr />
+
+  <table border = "1">
+    <tr>
+      <th>
+        countries
+      </th>
+      <th>
+        capitals
+      </th>
+    </tr>
+    <tr>
+      <td>
+        usa
+      </td>
+      <td>
+        washington d.c
+      </td>
+    </tr>
+    <tr>
+      <td>
+        sweden
+      </td>
+      <td>
+        stockholm
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

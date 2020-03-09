@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+  </head>
+  <body>
+    <table> <!--the reason we use thead & tbody instead of using th n td in a tr within maintain coz we can actually
+              style them individually rather than a whole. & best practice not to use attributes like border, cell
+            padding etc., as styling is done by css and html is only meant for structure of the page.-->
+      <caption>  <!--caption specifies the caption or title of the table-->
+        Contact Me:
+        </caption>
+      <thead> <!--contains table headings-->
+        <tr> <!--table row-->
+          <th> <!--table head to write heading for a column of the table-->
+            PHONE
+          </th>
+        </tr>
+        </thead>
+      <tbody> <!--contains table data-->
+        <tr>
+          <td> <!--table data its stored in each cell horizontally one after the other-->
+              989-0404-1989
+          </td>
+        </tr>
+      </tbody>
+    </table> <!-- its a tabular representation of data its in 2dimensional i.e., rows & columns.-->
+
+
+    <hr />
+    <form action="mailto:kasuradhikachoudary@gmail.com" method="post" enctype="text/plain"> <!-- represents a document section containg
+                                                          interactive controls for submitting information-->
+                              <!--action tells what to do when submit is clicked. it will take to specified location.
+                                in this case, mailto means when u click submit it will open client u specified in
+                                mailto n it will display this email there. & post will transfer data user entered into
+                                 email client.-->
+         <!--enctype(same like utf case) tells the information is in plain text format so it wont show random text.-->
+      <label>Name:</label>
+      <input type="text" name="your name " value=" " />
+      <label>Password:</label>
+      <input type="password" name="your password ">
+      <br />
+      <label>Would you like to receive newsletter?</label>
+      <input type="checkbox" name="" value="" />
+      <br />
+
+        <input type="color" name="" value="">
+        <input type="date" name="" value="">
+        <input type="button" name="" value="click me">
+        <input type="file" name="" value=""> <!--dont use this in html5 instead use attribute accept.-->
+        <label>email address:</label>
+        <input type="email" name="your email " value="" required>
+        <input type="range">
+          <input type="submit" value="submit">
+
+        <fieldset>
+          <legend>
+            Title
+            </legend>
+            <label><input type="radio" name="radio" />Select Me</label>
+        </fieldset>
+        <br />
+        <button>Save</button>
+
+        <label>message:</label>
+        <textarea name="name" rows="8" cols="80"></textarea> <!--even though u can change size of textarea this is default size at beginning chose by developer.-->
+
+    </form>
+  </body>
+</html>
